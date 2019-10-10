@@ -1,5 +1,6 @@
 BEGIN;
 
+-- Dropping tables first for HW purposes only, never for real development
 DROP TABLE IF EXISTS employees CASCADE;
 DROP TABLE IF EXISTS jobs CASCADE;
 
