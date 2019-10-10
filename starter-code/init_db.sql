@@ -10,12 +10,13 @@ CREATE TABLE employees (
   first_name VARCHAR(25),
   last_name VARCHAR(25),
   year_of_birth INT,
-  city VARCHAR(55)
+  city VARCHAR(55),
+  UNIQUE(ssn)
 );
 
 CREATE TABLE jobs (
   id SERIAL PRIMARY KEY NOT NULL,
-  ssn VARCHAR(11),
+  ssn VARCHAR(11) REFERENCES employees (ssn),
   company VARCHAR(55),
   salary INT,
   experience INT,
