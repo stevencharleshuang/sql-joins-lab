@@ -37,3 +37,11 @@ SELECT employees.first_name, employees.last_name, jobs.salary
  ORDER BY jobs.salary 
   DESC
  LIMIT 1;
+
+-->
+/*
+ first_name | last_name | salary
+------------+-----------+--------
+ Melony     | Smith     |    299
+*/
+
